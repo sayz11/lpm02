@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 namespace App\Http\Controllers;
 
@@ -94,7 +94,7 @@ class AnimalController extends Controller
         ]);
     }
     
-    public function delete(animal $animal)
+    public function delete(Animal $animal)
     {
         // delete attachment kalau ada
         if($animal->attachment){
