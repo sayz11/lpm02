@@ -25,6 +25,7 @@
                         </div>
                         <div class="form-group">
                             <button type="submit" class="btn btn-primary">Store My Animal Name!</button>
+                            <a class="btn btn-link" href="{{ url()->previous() }}"> Back</a>
                         </div>
 
 

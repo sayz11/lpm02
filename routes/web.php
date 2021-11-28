@@ -22,7 +22,6 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 // route for user model
-
 Route::get('/users', [App\Http\Controllers\UserController::class,'index']);
 Route::get('/users/{user}', [App\Http\Controllers\UserController::class,'show']);
 Route::get('/users/{user}/edit', [App\Http\Controllers\UserController::class,'edit']);

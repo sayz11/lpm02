@@ -55,7 +55,8 @@
                             </tbody>
                         </table>
                         {{$animals->links()}}
-                    </div>
+                        <a class="btn btn-secondary" href="/animals/create">Tambah</a>                        
+                    </div>                
                 </div>
             </div>
         </div>
