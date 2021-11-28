@@ -1,6 +1,6 @@
 
 
-@extends('layouts.app')
+@extends('admin.layouts.main')
 
 @section('content')
 <div class="container">
@@ -17,8 +17,6 @@
                                 <th>Email</th>
                                 <th>Date Created</th>
                                 <th>Action</th>
-                                <th>Edit</th>
-                                <th>Delete</th>
                             </thead>
                             <tbody>
                                 @foreach ($users as $user)
@@ -29,15 +27,8 @@
                                     <td> {{$user->created_at}} </td>
                                     <td>
                                         <a class="btn btn-primary" href="/users/{{$user->id}}">Show</a>
-
-                                    </td>
-                                    <td>
                                         <a class="btn btn-success" href="/users/{{$user->id}}/edit">Edit</a>
-
-                                    </td>
-                                    <td>
                                         <a onclick="return confirm ('Anda pasti untuk padam?')" class="btn btn-danger" href="/users/{{$user->id}}/delete">Padam</a>
-
                                     </td>
                                 </tr>
                                 @endforeach

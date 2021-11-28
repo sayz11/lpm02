@@ -82,7 +82,7 @@ class AnimalController extends Controller
         return view('animals.edit', compact ('animal'));
     }
     
-    public function update(Animal $todo, Request $request)
+    public function update(Animal $animal, Request $request)
     {
         $animal->name = $request->name;
         $animal->description= $request->description;

@@ -12,8 +12,8 @@
                     <form action="" method="POST">
                         @csrf
                         <div class="form-group">
-                            <label>Title</label>
-                            <input type="text" name="title" class="form-control" placeholder="Please enter animal name"value="{{$animal->name}}">
+                            <label>Nama Haiwan</label>
+                            <input type="text" name="name" class="form-control" placeholder="Please enter animal name" value="{{$animal->name}}">
                         </div>
                         <div class="form-group">
                             <label>Description</label>

@@ -11,7 +11,7 @@
                 <div class="card-body">                     
                         <div class="form-group">
                             <label>Title</label>
-                            <input type="text" value="{{$animal->name}}" name="title" class="form-control" placeholder="Please enter animal name" readonly> 
+                            <input type="text" value="{{$animal->name}}" name="name" class="form-control" placeholder="Please enter animal name" readonly> 
                         </div>
                         <div class="form-group">
                             <label>Description</label>

@@ -36,8 +36,6 @@
                                 <th>Created</th>
                                 <th>Creator</th>
                                 <th>Action</th>
-                                <th>Edit</th>
-                                <th>Delete</th>
                             </thead>
                             <tbody>
                                 @foreach ($animals as $animal)
@@ -49,15 +47,8 @@
                                     <td> {{$animal->user->name}} </td>
                                     <td>
                                         <a class="btn btn-primary" href="/animals/{{$animal->id}}">Show</a>
-
-                                    </td>
-                                    <td>
                                         <a class="btn btn-success" href="/animals/{{$animal->id}}/edit">Edit</a>
-
-                                    </td>
-                                    <td>
                                         <a onclick="return confirm ('Anda pasti untuk padam?')" class="btn btn-danger" href="/animals/{{$animal->id}}/delete">Padam</a>
-
                                     </td>
                                 </tr>
                                 @endforeach
@@ -65,7 +56,6 @@
                         </table>
                         {{$animals->links()}}
                     </div>
-                    
                 </div>
             </div>
         </div>
